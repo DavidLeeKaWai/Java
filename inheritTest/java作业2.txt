@@ -1,0 +1,26 @@
+按要求编写程序：
+(1) 基类：Point (点)类，它封装了：
+	　两个成员变量：
+		x				 	//点的横坐标，int型
+		y					//点的纵坐标，int型
+	　七个成员方法:：
+		Point()				//默认构造方法，x和y均取值为0；
+		Point(int x, int y)	    //带参数的构造方法；
+		setX(int x) 			//设置点的横坐标
+		getX() 				//获得点的横坐标
+		setY(int y) 			//设置点的纵坐标
+		getY() 				//获得点的纵坐标
+		toString()			    //返回形如：“点(10, 25) ”的信息
+(2) 派生类：Circle(圆)类，它新增了：
+	一个成员变量：
+		radius				//圆的半径，float型
+	七个成员方法:：
+		Circle()				//默认构造方法，radius取值为0.0f，调用基类默认构造方法；
+		Circle(int x, int y,float r) //带参数的构造方法，调用基类带参数构造方法；
+		setRadius(int r) 		//设置圆的半径
+		getRadius()	 		//得到圆的半径
+		getArea() 			//获得圆的面积
+		getPerimeter() 		//获得圆的周长
+		toString()				//重写基类的toString()方法，返回形如：
+							//“圆点(10, 25)，半径：5.5， 周长：xxx，面积：xxxx ”的信息
+(3) 主类：InheritTest，在它的main()方法中创建一个圆点位置为(10, 25)，半径为5.5的圆对象c，然后分别调用基类和派生类的toString()方法输出点和圆的相应信息。
